@@ -4,7 +4,7 @@ import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { UUIDService } from './core/uuid.service';
 import { HealthStateService } from './health-state/health-state.service';
-import { BackgroundMode } from '@ionic-native/background-mode/ngx';
+import { BackgroundMode } from '@ionic-native/background-mode';
 
 
 @Component({
@@ -17,7 +17,6 @@ export class AppComponent {
   initialized = false;
 
   constructor(
-    private backgroundMode: BackgroundMode,
     private platform: Platform,
     private splashScreen: SplashScreen,
     private statusBar: StatusBar,
@@ -33,7 +32,7 @@ export class AppComponent {
       this.initialized = true;
       this.needRegistration = !this.uuidService.getUserID();
       if (this.platform.is('ios')) {
-        this.backgroundMode.enable();
+        BackgroundMode.enable();
       }
     });
   }
