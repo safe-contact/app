@@ -1,0 +1,22 @@
+<ion-app>
+  <ion-app>
+    <ion-header [translucent]="true">
+      <ion-toolbar>
+        <ion-title>
+          {{'app.title' | translate}}
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content [fullscreen]="true">
+      <mv-home *ngIf="needRegistration" (userCreated)="needRegistration = false"></mv-home>
+      <ng-container *ngIf="!needRegistration">
+        <ion-refresher slot="fixed" pullFactor="0.5" pullMin="100" pullMax="200" (ionRefresh)="refreshState($event)">
+          <ion-refresher-content></ion-refresher-content>
+        </ion-refresher>
+        <mv-health-state></mv-health-state>
+        <mv-scan></mv-scan>
+      </ng-container>
+    </ion-content>
+  </ion-app>
+</ion-app>

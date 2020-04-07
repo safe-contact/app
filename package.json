@@ -1,0 +1,113 @@
+{
+  "name": "covid-ionic",
+  "version": "0.0.1",
+  "author": "Ionic Framework",
+  "homepage": "https://ionicframework.com/",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "ios:clean": "ionic cordova platform rm ios && ionic cordova platform add ios",
+    "android:clean": "ionic cordova platform rm android && ionic cordova platform add android",
+    "ios:run": "ionic cordova run ios --device",
+    "android:run": "ionic cordova run android --device"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/common": "~8.2.14",
+    "@angular/core": "~8.2.14",
+    "@angular/forms": "~8.2.14",
+    "@angular/platform-browser": "~8.2.14",
+    "@angular/platform-browser-dynamic": "~8.2.14",
+    "@angular/router": "~8.2.14",
+    "@ionic-native/android-permissions": "^5.23.0",
+    "@ionic-native/background-mode": "^5.0.0-beta.24",
+    "@ionic-native/ble": "^5.23.0",
+    "@ionic-native/bluetooth-le": "^5.23.0",
+    "@ionic-native/bluetooth-serial": "^5.23.0",
+    "@ionic-native/core": "^5.0.7",
+    "@ionic-native/device": "^5.23.0",
+    "@ionic-native/diagnostic": "^5.23.0",
+    "@ionic-native/local-notifications": "^5.23.0",
+    "@ionic-native/splash-screen": "^5.0.0",
+    "@ionic-native/status-bar": "^5.0.0",
+    "@ionic/angular": "^5.0.0",
+    "@ngx-translate/core": "^12.1.2",
+    "cordova-android": "^8.1.0",
+    "cordova-ios": "^5.1.1",
+    "cordova-plugin-android-permissions": "^1.0.2",
+    "cordova-plugin-background-mode": "^0.7.3",
+    "cordova-plugin-background-mode-bluetooth-central": "^1.0.0",
+    "cordova-plugin-background-mode-bluetooth-peripheral": "^1.0.0",
+    "cordova-plugin-badge": "^0.8.8",
+    "cordova-plugin-bluetooth-peripheral-usage-description": "^1.0.1",
+    "cordova-plugin-bluetoothle": "^4.5.9",
+    "cordova-plugin-ionic": "^5.4.6",
+    "cordova-plugin-local-notification": "^0.9.0-beta.2",
+    "core-js": "^2.5.4",
+    "crypto-js": "^4.0.0",
+    "lodash": "^4.17.15",
+    "nan": "^2.14.0",
+    "rxjs": "^6.5.4",
+    "rxjs-compat": "^6.5.5",
+    "tslib": "^1.9.0",
+    "zone.js": "~0.9.1"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.803.20",
+    "@angular/cli": "~8.3.23",
+    "@angular/compiler": "~8.2.14",
+    "@angular/compiler-cli": "~8.2.14",
+    "@angular/language-service": "~8.2.14",
+    "@ionic/angular-toolkit": "^2.1.1",
+    "@types/lodash": "^4.14.149",
+    "@types/node": "~8.9.4",
+    "cordova-plugin-device": "^2.0.2",
+    "cordova-plugin-ionic-keyboard": "^2.2.0",
+    "cordova-plugin-ionic-webview": "^4.1.3",
+    "cordova-plugin-splashscreen": "^5.0.2",
+    "cordova-plugin-statusbar": "^2.4.2",
+    "cordova-plugin-whitelist": "^1.3.3",
+    "jasmine-core": "~3.4.0",
+    "ts-node": "~7.0.0",
+    "tslint": "~5.15.0",
+    "typescript": "~3.4.3"
+  },
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-ionic-webview": {
+        "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+"
+      },
+      "cordova-plugin-ionic-keyboard": {},
+      "cordova-plugin-bluetoothle": {},
+      "cordova-plugin-android-permissions": {},
+      "cordova-plugin-background-mode-bluetooth-peripheral": {},
+      "cordova-plugin-bluetooth-peripheral-usage-description": {
+        "TEXT": "Detection des autres utilisateurs"
+      },
+      "cordova-plugin-background-mode-bluetooth-central": {},
+      "cordova-plugin-ionic": {
+        "APP_ID": "c201ab7e",
+        "CHANNEL_NAME": "Master",
+        "UPDATE_METHOD": "background",
+        "MAX_STORE": "2",
+        "MIN_BACKGROUND_DURATION": "30",
+        "UPDATE_API": "https://api.ionicjs.com"
+      },
+      "cordova-plugin-local-notification": {},
+      "cordova-plugin-background-mode": {}
+    },
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  }
+}

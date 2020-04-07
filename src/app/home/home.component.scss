@@ -1,0 +1,30 @@
+:host {
+  display: block;
+  height: 100%;
+  ion-slides {
+    height: 100%;
+  }
+  h1.slide {
+    margin-top:0px;
+    color: #4788C7;
+    font-size: 3em;
+    font-weight: 700;
+  }
+  .slide-content {
+    color:white;
+    max-width: 90%;
+    margin: auto;
+    font-size: 19px;
+  }
+
+  .slide-img {
+    max-width: 60%;
+    margin: auto;
+    max-height: 200px;
+  }
+
+  .slide-img img {
+    max-height:200px;
+
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "covid-ionic",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "c201ab7e"
+}

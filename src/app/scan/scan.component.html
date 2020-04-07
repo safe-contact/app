@@ -1,0 +1,38 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>
+      Vos contacts
+    </ion-card-title>
+    <br>
+    <ion-card-subtitle>
+      Votre identifiant : ...{{userId | slice:-12}}
+    </ion-card-subtitle>
+    <ion-card-subtitle>
+      {{statusAdvertising==='advertisingStarted' ? 'Vous êtes détectable' : 'Pas encore détectable'}}
+    </ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    <table style="font-size:small;border:0; width:100%">
+      <tr *ngFor="let entry of uuidsList | keyvalue">
+        <td>...{{entry.value.uuid | slice:-12 }}</td>
+        <td>{{entry.value.first}}</td>
+        <td>{{entry.value.last}}</td>
+        <td>{{entry.value.rssiMax}}</td>
+      </tr>
+    </table>
+  </ion-card-content>
+</ion-card>
+
+<!--
+<br>
+
+status : {{status}}<br>
+lastError : {{lastError}}<br>
+----------------<br>
+
+DETECT<br>
+<div *ngFor="let entry of devices | keyvalue">
+  {{entry.value | json}}
+</div>
+-->

@@ -1,0 +1,43 @@
+<ion-slides pager="true">
+    <ion-slide style="background-color: #98CCFC;">
+        <div class="slide">
+        <ion-img class="slide-img" [src]="'assets/img/slide1.png'"></ion-img>
+        <br>
+        <h1 class="slide">{{'home.title1' | translate}}</h1>
+        <br>
+        <br>
+        <div class="slide-content">
+            {{'home.content1' | translate}}
+        </div>
+        </div>
+    </ion-slide>
+    <ion-slide style="background-color: #98CCFC;">
+        <div class="slide">
+        <ion-img class="slide-img" [src]="'/assets/img/slide2.png'"></ion-img>
+        <br>
+        <h1 class="slide">{{'home.title2' | translate}}</h1>
+        <br>
+        <br>
+        <div class="slide-content">
+            {{'home.content2' | translate}}
+            
+        </div>
+    </div>
+    </ion-slide>
+    <ion-slide style="background-color: #98CCFC;">
+        <div class="slide">
+        <ion-img class="slide-img" [src]="'assets/img/slide3.png'"></ion-img>
+        <br>
+        <h1 class="slide">{{'home.title3' | translate}}</h1>
+        <br>
+        <br>
+        <div class="slide-content">
+            {{'home.content3' | translate}}
+            
+        </div>
+        <br>
+        <ion-button color="light" expand="full" style="position: absolute;bottom: 2em;right: 0;left: 0;" (click)="createUser()">{{'home.save' | translate}}</ion-button>
+    </div>
+    </ion-slide>
+</ion-slides>
+
